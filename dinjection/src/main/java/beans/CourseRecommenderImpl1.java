@@ -1,9 +1,8 @@
 package beans;
 
 import model.Course;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import recommender.CourseRecommender;
 
 import java.util.List;
 

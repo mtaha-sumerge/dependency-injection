@@ -1,6 +1,7 @@
 package beans;
 
 import model.Course;
+import recommender.CourseRecommender;
 
 import java.util.List;
 

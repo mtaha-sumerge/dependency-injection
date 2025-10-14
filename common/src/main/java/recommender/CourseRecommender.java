@@ -1,4 +1,4 @@
-package beans;
+package recommender;
 
 import model.Course;
 

@@ -1,13 +1,15 @@
 package config;
 
-import beans.CourseRecommender;
+import org.springframework.context.annotation.Import;
+import recommender.CourseRecommender;
 import beans.CourseRecommenderImpl2;
-import beans.CourseRecommenderImpl4;
+import external.CourseRecommenderImpl4;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@Import(ExternalConfig.class)
 @ComponentScan(basePackages = {"beans", "service", "model"})
 public class AppConfig {
 

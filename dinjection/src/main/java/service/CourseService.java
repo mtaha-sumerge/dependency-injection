@@ -1,6 +1,6 @@
 package service;
 
-import beans.CourseRecommender;
+import recommender.CourseRecommender;
 import model.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

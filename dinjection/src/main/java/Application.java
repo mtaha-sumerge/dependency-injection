@@ -7,7 +7,7 @@ import service.CourseService;
 import java.util.List;
 
 public class Application {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 

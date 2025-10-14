@@ -2,6 +2,7 @@ package beans;
 
 import model.Course;
 import org.springframework.stereotype.Component;
+import recommender.CourseRecommender;
 
 import java.util.List;
 
