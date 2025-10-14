@@ -13,20 +13,11 @@ public class CourseService {
 
     private CourseRecommender courseRecommender;
 
-//    @Autowired
-//    private CourseRecommender courseRecommenderImpl2; // by variable name
-
     // Constructor injection
     @Autowired
-    public CourseService(CourseRecommender courseRecommender) {
+    public CourseService(@Qualifier("courseRecommenderImpl4") CourseRecommender courseRecommender) {
         this.courseRecommender = courseRecommender;
     }
-
-    // Setter autowiring
-//    @Autowired
-//    public void setCourseRecommender(@Qualifier("courseRecommenderImpl2") CourseRecommender courseRecommender) {
-//        this.courseRecommender = courseRecommender;
-//    }
 
     public List<Course> getRecommendedCourses() {
         return courseRecommender.recommendedCourses();

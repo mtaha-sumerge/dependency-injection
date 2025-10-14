@@ -1,11 +1,10 @@
 package beans;
 
 import model.Course;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+// Implicit bean
 public class CourseRecommenderImpl2 implements CourseRecommender {
     @Override
     public List<Course> recommendedCourses() {
